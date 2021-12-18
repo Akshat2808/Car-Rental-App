@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="change_route">
+        <item>Round Trip</item>
+        <item>One-Way Trip</item>
+    </string-array>
+
+    <string-array name="q_1">
+        <item>Yes. You must bring the vehicle back to the
+            same place you picked it up before the end of your reservation. If you dropoff the car at a location different from your pickup point, you will be charged INR 2,000, and the full hourly rate and late fees until the vehicle is returned to the correct location.</item>
+    </string-array>
+
+</resources>

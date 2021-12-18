@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carrentals.select_city"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6C0BA9"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Select your City">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/back_arrow_city_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#6C0BA9"
+                android:src="@drawable/arrow_back_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/back_arrow_city_selection"
+                android:fontFamily="@font/biryani_semibold"
+                android:text="Select your City"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/search_text"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:icon="@drawable/search"-->
+<!--            android:hint="Search for your City">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="text"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.carrentals.select_city"
+        android:background="#00000000"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search for your City"
+        android:iconifiedByDefault="false"
+        android:id="@+id/search_text">
+    </SearchView>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Cities"
+        android:textColor="#D3A7EF"
+        android:textStyle="bold"
+        android:id="@+id/popular_cities_text"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/vadodara_button"
+            android:layout_width="189dp"
+            android:layout_height="153dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/vadodara"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/delhi_button"
+            android:layout_width="182dp"
+            android:layout_height="163dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/delhi"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/chennai_button"
+            android:layout_width="175dp"
+            android:layout_height="167dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/chennai"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/mumbai_button"
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mumbai"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Cities"
+        android:textColor="#D3A7EF"
+        android:textStyle="bold"
+        android:id="@+id/other_cities_text"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        android:elevation="5dp"
+        android:text="Indore"
+        android:id="@+id/indore_button"
+        android:gravity="left"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:elevation="5dp"
+        android:text="Mysore"
+        android:id="@+id/mysore_button"
+        android:gravity="left"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:elevation="5dp"
+        android:text="Goa"
+        android:id="@+id/goa_button"
+        android:gravity="left"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:elevation="5dp"
+        android:text="Patna"
+        android:id="@+id/patna_button"
+        android:gravity="left"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:elevation="5dp"
+        android:text="Ahmedabad"
+        android:id="@+id/ahmedabad_button"
+        android:gravity="left"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
